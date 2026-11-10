@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d71920">
+  <meta name="description" content="Kono Pizza — bold pizza, premium energy. Order fresh pizza, sides and drinks.">
+  <title>Kono Pizza — Bold Pizza. Premium Energy.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-loader" aria-hidden="true"><div class="loader-mark">K</div></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Kono Pizza home">
+      <span class="brand-k">K</span><span>KONO</span><small>PIZZA</small>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#menu">Menu</a><a href="#deals">Deals</a><a href="#about">Why Kono</a>
+    </nav>
+    <button class="cart-button" id="cartOpen" aria-label="Open cart">Cart <span id="cartCount">0</span></button>
+  </header>
+
+  <main id="home">
+    <section class="hero reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">KONO PIZZA • EST. 2026</p>
+        <h1>BIG<br><span>FLAVOUR.</span><br>ZERO BORING.</h1>
+        <p class="hero-text">Fresh dough. Loud toppings. Serious cheese. Built to be remembered.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">ORDER THE GOOD STUFF <span>→</span></a>
+          <a class="btn btn-ghost" href="#deals">SEE DEALS</a>
+        </div>
+      </div>
+      <div class="hero-pizza" aria-label="Illustration of a Kono Pizza">
+        <div class="burst">HOT<br>NOW</div>
+        <div class="pizza">
+          <div class="crust"></div>
+          <div class="cheese"></div>
+          <i class="pep p1"></i><i class="pep p2"></i><i class="pep p3"></i><i class="pep p4"></i><i class="pep p5"></i><i class="pep p6"></i>
+          <i class="leaf l1"></i><i class="leaf l2"></i><i class="leaf l3"></i>
+        </div>
+      </div>
+      <div class="hero-strip"><span>FRESH EVERY DAY</span><span>•</span><span>FAST DELIVERY</span><span>•</span><span>BIG FLAVOUR</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Kono promise">
+      <div>NO BORING BITES&nbsp;&nbsp; ★ &nbsp;&nbsp;FRESH DOUGH&nbsp;&nbsp; ★ &nbsp;&nbsp;MELTY CHEESE&nbsp;&nbsp; ★ &nbsp;&nbsp;NO BORING BITES&nbsp;&nbsp; ★ &nbsp;&nbsp;FRESH DOUGH&nbsp;&nbsp; ★</div>
+    </section>
+
+    <section id="deals" class="deals section reveal">
+      <div class="section-head">
+        <div><p class="eyebrow">VIP VALUE</p><h2>DEALS THAT<br>HIT DIFFERENT.</h2></div>
+        <p>Premium taste without the premium drama. Pick your move.</p>
+      </div>
+      <div class="deal-grid">
+        <article class="deal-card red">
+          <span class="deal-number">01</span><p class="deal-tag">KONO CLASSIC</p>
+          <h3>2 LARGE<br>+ SIDES</h3><strong>€29.95</strong>
+          <button class="add-deal" data-name="Kono Classic Deal" data-price="29.95">ADD DEAL</button>
+        </article>
+        <article class="deal-card blue">
+          <span class="deal-number">02</span><p class="deal-tag">THE CREW</p>
+          <h3>3 PIZZAS<br>+ 2 SIDES</h3><strong>€39.95</strong>
+          <button class="add-deal" data-name="The Crew Deal" data-price="39.95">ADD DEAL</button>
+        </article>
+        <article class="deal-card green">
+          <span class="deal-number">03</span><p class="deal-tag">SOLO VIP</p>
+          <h3>PIZZA<br>+ DRINK</h3><strong>€14.95</strong>
+          <button class="add-deal" data-name="Solo VIP Deal" data-price="14.95">ADD DEAL</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="menu" class="menu section reveal">
+      <div class="section-head">
+        <div><p class="eyebrow">THE LINE-UP</p><h2>THE KONO<br>MENU.</h2></div>
+        <p>Our crowd favourites, stacked with flavour and made fresh to order.</p>
+      </div>
+      <div class="filter-row">
+        <button class="filter active" data-filter="all">ALL</button>
+        <button class="filter" data-filter="pizza">PIZZA</button>
+        <button class="filter" data-filter="sides">SIDES</button>
+        <button class="filter" data-filter="drinks">DRINKS</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card" data-category="pizza">
+          <div class="food-art pizza-art"><span>🍕</span></div><div class="card-body"><span class="mini-label">BESTSELLER</span><h3>The Big Kono</h3><p>Pepperoni, mozzarella, roasted tomato, chilli honey.</p><div class="card-bottom"><b>€15.95</b><button class="add" data-name="The Big Kono" data-price="15.95">+</button></div></div>
+        </article>
+        <article class="menu-card" data-category="pizza">
+          <div class="food-art green-art"><span>🌿</span></div><div class="card-body"><span class="mini-label">GREEN MACHINE</span><h3>Garden Party</h3><p>Mozzarella, pesto, spinach, peppers, red onion.</p><div class="card-bottom"><b>€14.95</b><button class="add" data-name="Garden Party" data-price="14.95">+</button></div></div>
+        </article>
+        <article class="menu-card" data-category="pizza">
+          <div class="food-art blue-art"><span>🔥</span></div><div class="card-body"><span class="mini-label">HOT STUFF</span><h3>Firestarter</h3><p>Spicy salami, jalapeño, mozzarella, hot honey.</p><div class="card-bottom"><b>€16.95</b><button class="add" data-name="Firestarter" data-price="16.95">+</button></div></div>
+        </article>
+        <article class="menu-card" data-category="pizza">
+          <div class="food-art red-art"><span>🍄</span></div><div class="card-body"><span class="mini-label">FAN FAVOURITE</span><h3>Truffle Boss</h3><p>Garlic cream, mushrooms, parmesan, truffle oil.</p><div class="card-bottom"><b>€17.95</b><button class="add" data-name="Truffle Boss" data-price="17.95">+</button></div></div>
+        </article>
+        <article class="menu-card" data-category="sides">
+          <div class="food-art fries-art"><span>🍟</span></div><div class="card-body"><span class="mini-label">SIDE QUEST</span><h3>Kono Fries</h3><p>Crispy fries, parmesan, herbs and house dip.</p><div class="card-bottom"><b>€5.95</b><button class="add" data-name="Kono Fries" data-price="5.95">+</button></div></div>
+        </article>
+        <article class="menu-card" data-category="sides">
+          <div class="food-art bites-art"><span>🧀</span></div><div class="card-body"><span class="mini-label">CHEESE MODE</span><h3>Cheese Bites</h3><p>Golden dough bites with mozzarella and garlic butter.</p><div class="card-bottom"><b>€6.95</b><button class="add" data-name="Cheese Bites" data-price="6.95">+</button></div></div>
+        </article>
+        <article class="menu-card" data-category="drinks">
+          <div class="food-art drink-art"><span>🥤</span></div><div class="card-body"><span class="mini-label">ICE COLD</span><h3>Cola</h3><p>Classic chilled fizzy refreshment.</p><div class="card-bottom"><b>€2.50</b><button class="add" data-name="Cola" data-price="2.50">+</button></div></div>
+        </article>
+        <article class="menu-card" data-category="drinks">
+          <div class="food-art drink-art green-drink"><span>🍋</span></div><div class="card-body"><span class="mini-label">FRESH</span><h3>Lemonade</h3><p>Zesty, sparkling and seriously refreshing.</p><div class="card-bottom"><b>€2.95</b><button class="add" data-name="Lemonade" data-price="2.95">+</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="manifesto reveal">
+      <div class="manifesto-big">WE DON'T<br><span>DO AVERAGE.</span></div>
+      <div class="manifesto-copy">
+        <p class="eyebrow">THE KONO STANDARD</p>
+        <p>We make pizza like it's the main event. Hand-finished dough, proper ingredients, big flavours and a little bit of attitude.</p>
+        <div class="stats"><div><b>100%</b><span>FRESH DOUGH</span></div><div><b>0%</b><span>BORING</span></div><div><b>24/7</b><span>PIZZA ENERGY</span></div></div>
+      </div>
+    </section>
+
+    <section class="cta reveal">
+      <div><p class="eyebrow">READY WHEN YOU ARE</p><h2>MAKE TONIGHT<br><span>A KONO NIGHT.</span></h2><a class="btn btn-dark" href="#menu">START YOUR ORDER →</a></section>
+  </main>
+
+  <footer><div class="footer-brand">KONO <span>PIZZA</span></div><p>Fresh pizza. Big energy. Made for your table.</p><div class="footer-links"><a href="#menu">Menu</a><a href="#deals">Deals</a><a href="#about">About</a></div></footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header"><h2>YOUR KONO</h2><button id="cartClose" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cartItems"><p class="empty">Your order is looking lonely.<br>Add something delicious.</p></div>
+    <div class="cart-footer"><div><span>Subtotal</span><strong id="cartTotal">€0.00</strong></div><button class="checkout" id="checkout">CHECKOUT →</button><small>Demo checkout — connect your payment/order system here.</small></div>
+  </aside>
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <div class="toast" id="toast">Added to your Kono ✓</div>
+  <script src="script.js"></script>
+</body>
+</html>
